@@ -1,9 +1,8 @@
 {
 	"feat": [
 		{
-			"name": "Aberrant Dragonmark",
-			"source": "EFA",
-			"page": 39,
+			"name": "Marca Aberrante",
+			"source": "BFT",
 			"category": "D",
 			"prerequisite": [
 				{
