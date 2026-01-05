@@ -64,6 +64,46 @@
 			]
 		},
 		{
+			"name": "Toque Arcano",
+			"source": "BFT",
+			"page": 0,
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": ["int", "wis", "cha"],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": ["int", "wis", "cha"]
+					},
+					"known": {
+						"_": [
+							{"choose": "level=0|class=Wizard", "count": 2}
+						]
+					}
+				}
+			],
+			"entries": [
+				"Você ganha os seguintes benefícios:",
+				{
+					"type": "list",
+					"items": [
+						"Você aprende dois cantrips de sua escolha da lista de magias do mago.",
+						"Seu atributo de conjuração para esses cantrips é Inteligência, Sabedoria ou Carisma (escolha ao ganhar este talento)."
+					]
+				}
+			]
+		},
+		{
 			"name": "Aberrant Dragonmark",
 			"source": "ERLW",
 			"page": 52,
