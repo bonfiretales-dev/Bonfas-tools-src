@@ -467,6 +467,18 @@
 			]
 		},
 		{
+			"name": "Bonfire Tales",
+			"id": "BFT",
+			"source": "BFT",
+			"group": "homebrew",
+			"cover": {
+				"type": "internal",
+				"path": "covers/BFT.webp"
+			},
+			"published": "2025-01-01",
+			"author": "Bonfire Tales Team"
+		},		
+		{
 			"name": "Dungeon Master's Screen",
 			"id": "Screen",
 			"source": "Screen",
