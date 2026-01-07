@@ -1,23 +1,4 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "BFT",
-				"abbreviation": "BFT",
-				"full": "Bonfire Tales RPG",
-				"version": "1.0.0",
-				"url": "https://www.worldanvil.com/w/bonfire-tales-rpg-bonfire-tales",
-				"authors": [
-					"Bonfire Tales"
-				],
-				"convertedBy": [
-					"Claude AI"
-				]
-			}
-		],
-		"dateAdded": 1736265600,
-		"dateLastModified": 1736265600
-	},
 	"feat": [
 		{
 			"name": "Alerta",
