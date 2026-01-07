@@ -1,627 +1,156 @@
-/*================================================================
-  BONFIRE TALES - TEMA CUSTOMIZADO PARA 5ETOOLS
-  Adaptação clean do tema Bonfire original
-  Mantém identidade visual com tons de vermelho, laranja e dourado
-================================================================*/
+/* ==========================================================================
+   ARQUIVO: bonfire-theme.css
+   PROJETO: Bonfire Tales - 5etools
+   DESCRIÇÃO: Tema global Bonfire (Versão Corrigida e Abrangente)
+   ========================================================================== */
 
-/* ===== IMPORTAÇÃO DE FONTES ===== */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@400;600;700&family=Frank+Ruhl+Libre:wght@400;700&display=swap');
 
-/* ===== VARIÁVEIS DE CORES BONFIRE ===== */
 :root {
-  /* Cores principais Bonfire */
   --bonfire-red: #cf3020;
   --bonfire-orange: #ff5700;
   --bonfire-dark-red: #b4000c;
   --bonfire-gold: #ffda00;
-  
-  /* Tons de fundo */
   --bonfire-bg-dark: #1c1a18;
   --bonfire-bg-darker: #141414;
   --bonfire-bg-card: rgba(41, 35, 31, 0.95);
-  
-  /* Tons de texto */
   --bonfire-text-light: #eae1cf;
   --bonfire-text-cream: #ffe6c2;
   --bonfire-text-gold: #ffdba8;
-  
-  /* Bordas e acentos */
   --bonfire-border: rgba(255, 120, 40, 0.25);
   --bonfire-border-bright: rgba(255, 87, 0, 0.4);
-  
-  /* Sombras e glows */
   --bonfire-glow: rgba(255, 110, 20, 0.15);
   --bonfire-glow-strong: rgba(255, 80, 20, 0.4);
 }
 
-/* ===== BACKGROUND GERAL ===== */
+/* --- ESTRUTURA GLOBAL --- */
+body, html {
+  background-color: var(--bonfire-bg-darker) !important;
+  color: var(--bonfire-text-light) !important;
+}
+
 body {
   background: linear-gradient(135deg, #1a1614 0%, #0d0c0b 100%) !important;
   background-attachment: fixed !important;
 }
 
-/* Overlay de textura sutil */
-.overlay-noise {
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(207, 48, 32, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 87, 0, 0.03) 0%, transparent 50%);
-}
-
-/* ===== HEADER ===== */
+/* --- HEADER & NAV --- */
 .page__header {
   background: linear-gradient(180deg, #2a2320 0%, #1c1a18 100%) !important;
-  border-bottom: 2px solid var(--bonfire-border-bright);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid var(--bonfire-border-bright) !important;
 }
 
 .page__title {
   color: var(--bonfire-text-gold) !important;
   font-family: 'Cinzel', serif !important;
-  text-shadow: 0 0 15px var(--bonfire-glow), 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .page__title span {
   color: var(--bonfire-orange) !important;
 }
 
-.page__subtitle {
-  color: var(--bonfire-text-light) !important;
-  opacity: 0.85;
-}
-
-/* ===== NAVEGAÇÃO ===== */
-.page__nav {
-  background: transparent !important;
-}
-
 .nav-pills > li > a {
   color: var(--bonfire-text-light) !important;
-  border: 1px solid transparent;
-  transition: all 0.25s ease;
+  background: rgba(28, 26, 24, 0.6) !important;
+  border: 1px solid var(--bonfire-border) !important;
 }
 
-.nav-pills > li > a:hover {
-  background: rgba(207, 48, 32, 0.15) !important;
-  border-color: var(--bonfire-border);
-  color: var(--bonfire-text-gold) !important;
-  box-shadow: 0 0 12px var(--bonfire-glow);
-}
-
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
+.nav-pills > li.active > a {
   background: linear-gradient(135deg, var(--bonfire-red) 0%, var(--bonfire-dark-red) 100%) !important;
-  border-color: var(--bonfire-border-bright);
-  color: #fff !important;
-  box-shadow: 0 0 15px var(--bonfire-glow-strong);
+  border-color: var(--bonfire-border-bright) !important;
 }
 
-/* ===== BOTÕES DA PÁGINA INICIAL ===== */
-.home__btn-page,
-.ve-btn.home__btn-page {
+/* --- BOTÕES DA HOME --- */
+.home__btn-page {
   background: linear-gradient(135deg, rgba(41, 35, 31, 0.95) 0%, rgba(28, 26, 24, 0.95) 100%) !important;
   border: 2px solid var(--bonfire-border) !important;
   border-radius: 12px !important;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 .home__btn-page:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 
-    0 8px 20px rgba(0, 0, 0, 0.4),
-    0 0 20px var(--bonfire-glow-strong),
-    inset 0 0 30px rgba(255, 87, 0, 0.08);
   border-color: var(--bonfire-border-bright) !important;
+  box-shadow: 0 0 20px var(--bonfire-glow-strong) !important;
+  transform: translateY(-3px) !important;
 }
 
-.home__btn-page:active {
-  transform: translateY(-1px) scale(0.98);
-  box-shadow: 
-    0 4px 10px rgba(0, 0, 0, 0.5),
-    inset 0 0 15px rgba(255, 87, 0, 0.15);
+.home__btn-player { border-color: var(--bonfire-orange) !important; }
+.home__btn-rule { border-color: #ff8c42 !important; }
+.home__btn-dm { border-color: var(--bonfire-red) !important; }
+
+.home__icn-page {
+  filter: drop-shadow(0 0 8px var(--bonfire-glow)) !important;
 }
 
-/* Ícones - cores Bonfire */
-.home__icn-page,
-.fal,
-.far,
-.fas {
-  filter: drop-shadow(0 0 8px var(--bonfire-glow));
-}
+.home__btn-player .home__icn-page { color: var(--bonfire-orange) !important; }
+.home__btn-rule .home__icn-page { color: #ff8c42 !important; }
+.home__btn-dm .home__icn-page { color: var(--bonfire-red) !important; }
 
-/* Cores específicas por categoria */
-.home__btn-player,
-.ve-btn.home__btn-player,
-.home__btn-player:hover,
-.home__btn-player:active,
-.home__btn-player:focus {
-  border-color: var(--bonfire-orange) !important;
-  color: var(--bonfire-text-gold) !important;
-}
-
-.home__btn-player .home__icn-page,
-.home__btn-player .fal {
-  color: var(--bonfire-orange) !important;
-  text-shadow: 0 0 10px var(--bonfire-glow);
-}
-
-.home__btn-rule,
-.home__btn-rule:hover,
-.home__btn-rule:active,
-.home__btn-rule:focus {
-  border-color: #ff8c42 !important;
-  color: var(--bonfire-text-cream) !important;
-}
-
-.home__btn-rule .home__icn-page,
-.home__btn-rule .fal {
-  color: #ff8c42 !important;
-  text-shadow: 0 0 10px rgba(255, 140, 66, 0.3);
-}
-
-.home__btn-dm,
-.home__btn-dm:hover,
-.home__btn-dm:active,
-.home__btn-dm:focus {
-  border-color: var(--bonfire-red) !important;
-  color: var(--bonfire-text-gold) !important;
-}
-
-.home__btn-dm .home__icn-page,
-.home__btn-dm .fal {
-  color: var(--bonfire-red) !important;
-  text-shadow: 0 0 10px rgba(207, 48, 32, 0.4);
-}
-
-/* Labels dos botões */
 .home__lbl-page {
   color: var(--bonfire-text-light) !important;
-  font-family: 'Open Sans', sans-serif !important;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
-/* ===== HEADERS DE SEÇÃO ===== */
-.home__stripe-header {
-  color: var(--bonfire-text-gold) !important;
-  font-family: 'Cinzel', serif !important;
-  text-shadow: 0 0 10px var(--bonfire-glow);
-}
-
-.home__h-player {
-  text-decoration-color: var(--bonfire-orange) !important;
-}
-
-.home__h-rule {
-  text-decoration-color: #ff8c42 !important;
-}
-
-.home__h-dm {
-  text-decoration-color: var(--bonfire-red) !important;
-}
-
-/* ===== LINKS ===== */
-a {
-  color: var(--bonfire-orange) !important;
-  transition: all 0.2s ease;
-}
-
-a:hover {
-  color: var(--bonfire-text-gold) !important;
-  text-shadow: 0 0 8px var(--bonfire-glow);
-  text-decoration: none !important;
-}
-
-/* ===== SEARCH BAR ===== */
-input[type="search"],
-.form-control {
-  background: rgba(28, 26, 24, 0.8) !important;
-  border: 1px solid var(--bonfire-border) !important;
-  color: var(--bonfire-text-light) !important;
-  border-radius: 8px;
-  transition: all 0.25s ease;
-}
-
-input[type="search"]:focus,
-.form-control:focus {
-  background: rgba(41, 35, 31, 0.95) !important;
-  border-color: var(--bonfire-border-bright) !important;
-  box-shadow: 0 0 12px var(--bonfire-glow);
-  outline: none;
-}
-
-input[type="search"]::placeholder {
-  color: rgba(234, 225, 207, 0.5) !important;
-}
-
-/* ===== BOTÕES GERAIS ===== */
-.btn {
-  border-radius: 8px;
-  transition: all 0.25s ease;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.btn-default {
-  background: var(--bonfire-bg-card) !important;
-  border-color: var(--bonfire-border) !important;
-  color: var(--bonfire-text-light) !important;
-}
-
-.btn-default:hover {
-  background: rgba(207, 48, 32, 0.2) !important;
-  border-color: var(--bonfire-border-bright) !important;
-  box-shadow: 0 0 12px var(--bonfire-glow);
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--bonfire-red) 0%, var(--bonfire-dark-red) 100%) !important;
-  border-color: var(--bonfire-border-bright) !important;
-  color: #fff !important;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, #e03828 0%, #c4000e 100%) !important;
-  box-shadow: 0 0 15px var(--bonfire-glow-strong);
-}
-
-/* ===== CONTAINERS E CARDS ===== */
-.container {
-  color: var(--bonfire-text-light) !important;
-}
-
-.alert {
-  background: var(--bonfire-bg-card) !important;
-  border: 1px solid var(--bonfire-border) !important;
-  border-left-width: 4px !important;
-  border-left-color: var(--bonfire-orange) !important;
-  border-radius: 10px;
-  color: var(--bonfire-text-light) !important;
-}
-
-.alert-warning {
-  border-left-color: var(--bonfire-gold) !important;
-}
-
-.alert-link {
-  color: var(--bonfire-text-gold) !important;
-  font-weight: 600;
-}
-
-/* ===== SCROLLBAR CUSTOMIZADA ===== */
-::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bonfire-bg-darker);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--bonfire-red) 0%, var(--bonfire-dark-red) 100%);
-  border-radius: 6px;
-  border: 2px solid var(--bonfire-bg-darker);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #e03828 0%, #c4000e 100%);
-  box-shadow: 0 0 8px var(--bonfire-glow);
-}
-
-/* ===== TEXTO GERAL ===== */
-p, li, span, div {
-  color: var(--bonfire-text-light);
-}
-
-strong, b {
-  color: var(--bonfire-text-gold);
-}
-
-em, i {
-  font-family: 'Frank Ruhl Libre', serif;
-  color: var(--bonfire-text-cream);
-  font-style: italic;
-}
-
-/* ===== HEADINGS ===== */
+/* --- ELEMENTOS DE TEXTO --- */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel', serif !important;
   color: var(--bonfire-text-gold) !important;
 }
 
-h1 {
-  text-shadow: 0 0 15px var(--bonfire-glow);
-}
-
-h2 {
-  text-shadow: 0 0 10px var(--bonfire-glow);
-}
-
-/* ===== RESPONSIVIDADE ===== */
-@media screen and (max-width: 991px) {
-  .home__btn-page {
-    width: 110px;
-  }
-  
-  .home__stripe-header {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .home__btn-page {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .home__icn-page {
-    font-size: 40px !important;
-  }
-  
-  .home__lbl-page {
-    font-size: 14px !important;
-  }
-}
-
-/* ===== ANIMAÇÕES SUTIS ===== */
-@keyframes bonfire-glow {
-  0%, 100% {
-    box-shadow: 0 0 15px var(--bonfire-glow);
-  }
-  50% {
-    box-shadow: 0 0 25px var(--bonfire-glow-strong);
-  }
-}
-
-.home__btn-page:hover {
-  animation: bonfire-glow 2s ease-in-out infinite;
-}
-
-/* ===== MODO NOTURNO (AJUSTES) ===== */
-.ve-night-mode .home__btn-page,
-.ve-night-mode .home__btn-page:hover,
-.ve-night-mode .home__btn-page:active,
-.ve-night-mode .home__btn-page {tant;
-}
-
-.ve-night-mode .home__lbl-page {
-  color: var(--bonfire-text-light) !important;
-}
-
-/* ===== FOOTER E ELEMENTOS EXTRAS ===== */
-.page__footer {
-  background: var(--bonfire-bg-dark);
-  border-top: 1px solid var(--bonfire-border);
+p, li, span, div:not(.ve-flex):not(.ve-flex-v-baseline) {
   color: var(--bonfire-text-light);
 }
 
-/* ===== TOOLTIPS E POPOVERS ===== */
-.tooltip-inner {
-  background: var(--bonfire-bg-card) !important;
-  border: 1px solid var(--bonfire-border-bright);
-  color: var(--bonfire-text-light) !important;
-}
-
-.popover {
-  background: var(--bonfire-bg-card) !important;
-  border: 1px solid var(--bonfire-border-bright);
-}
-
-.popover-title {
-  background: rgba(207, 48, 32, 0.2) !important;
-  border-bottom: 1px solid var(--bonfire-border-bright);
+strong, b {
   color: var(--bonfire-text-gold) !important;
 }
 
-/* ===== TABELAS ===== */
-.table {
-  color: var(--bonfire-text-light) !important;
+em, i {
+  font-family: 'Frank Ruhl Libre', serif !important;
+  color: var(--bonfire-text-cream) !important;
 }
 
+a {
+  color: var(--bonfire-orange) !important;
+}
+
+a:hover {
+  color: var(--bonfire-text-gold) !important;
+  text-decoration: none !important;
+}
+
+/* --- TABELAS & LISTAS --- */
 .table th {
   background: rgba(207, 48, 32, 0.3) !important;
   color: var(--bonfire-text-gold) !important;
-  border-color: var(--bonfire-border) !important;
 }
 
 .table tr:nth-child(odd) {
   background: rgba(41, 35, 31, 0.5) !important;
 }
 
-.table tr:nth-child(even) {
-  background: rgba(28, 26, 24, 0.5) !important;
-}
-
-.table tr:hover {
-  background: rgba(207, 48, 32, 0.15) !important;
-  box-shadow: inset 0 0 20px var(--bonfire-glow);
-}
-
-/* ===== FINAL - GARANTIR PRIORIDADE ===== */
-body * {
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-/* ===== AJUSTES ADICIONAIS PARA MAIOR CONTRASTE ===== */
-
-/* Força background escuro nos cards */
-.ve-btn-default.home__btn-page {
-  background: linear-gradient(135deg, rgba(41, 35, 31, 0.95) 0%, rgba(28, 26, 24, 0.95) 100%) !important;
-  border: 2px solid var(--bonfire-border) !important;
-}
-
-/* Melhora visibilidade das bordas nos cards */
-.home__btn-player.ve-btn-default {
-  border-color: var(--bonfire-orange) !important;
-  border-width: 2px !important;
-}
-
-.home__btn-rule.ve-btn-default {
-  border-color: #ff8c42 !important;
-  border-width: 2px !important;
-}
-
-.home__btn-dm.ve-btn-default {
-  border-color: var(--bonfire-red) !important;
-  border-width: 2px !important;
-}
-
-/* Ajusta cores dos ícones FontAwesome */
-.home__btn-player .fal,
-.home__btn-player .far,
-.home__btn-player .fas,
-.home__btn-player i {
-  color: var(--bonfire-orange) !important;
-}
-
-.home__btn-rule .fal,
-.home__btn-rule .far,
-.home__btn-rule .fas,
-.home__btn-rule i {
-  color: #ff8c42 !important;
-}
-
-.home__btn-dm .fal,
-.home__btn-dm .far,
-.home__btn-dm .fas,
-.home__btn-dm i {
-  color: var(--bonfire-red) !important;
-}
-
-/* Força cor do texto nos labels */
-.home__btn-page h4,
-.home__btn-page .home__lbl-page {
-  color: var(--bonfire-text-light) !important;
-  font-weight: 600 !important;
-}
-
-/* Ajusta navegação superior */
-.page__nav .nav-pills > li > a {
-  background: rgba(28, 26, 24, 0.6) !important;
-  border: 1px solid var(--bonfire-border);
-  margin: 0 3px;
-  border-radius: 8px;
-}
-
-/* Container principal */
-.container {
-  background: transparent !important;
-}
-
-/* Ajusta seções de texto */
-.container > div {
-  color: var(--bonfire-text-light) !important;
-}
-
-/* Headers de seção com mais destaque */
-.home__stripe-header div {
-  background: linear-gradient(90deg, transparent 0%, rgba(207, 48, 32, 0.2) 50%, transparent 100%);
-  padding: 8px 0;
-  border-radius: 8px;
-}
-
-/* Melhora hover nos botões */
-.home__btn-page:hover .home__icn-page {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
-/* Ajusta input de busca */
-.page__nav input[type="search"] {
+/* --- INPUTS --- */
+input[type="search"], .form-control {
   background: rgba(28, 26, 24, 0.9) !important;
   border: 1px solid var(--bonfire-border-bright) !important;
   color: var(--bonfire-text-light) !important;
 }
 
-/* Botão de busca */
-.page__nav button {
-  background: rgba(207, 48, 32, 0.3) !important;
-  border: 1px solid var(--bonfire-border-bright) !important;
-  color: var(--bonfire-text-gold) !important;
+/* --- SCROLLBAR --- */
+::-webkit-scrollbar-track { background: var(--bonfire-bg-darker); }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--bonfire-red) 0%, var(--bonfire-dark-red) 100%); }
+
+/* --- CORREÇÃO DE ESTRUTURA (IMPORTANTE) --- */
+/* Garante que o flexbox do 5etools não seja quebrado */
+.ve-flex, .ve-flex-v-baseline, .ve-flex-v-center, .ve-flex-h-center {
+  display: flex !important;
 }
 
-.page__nav button:hover {
-  background: rgba(207, 48, 32, 0.5) !important;
-  box-shadow: 0 0 10px var(--bonfire-glow);
+.container {
+  background: transparent !important;
 }
 
-/* Ajusta espaçamento e layout */
-.home__stripe {
-  padding: 60px 20px;
-}
-
-/* Melhora legibilidade do texto do corpo */
-.container p,
-.container li,
-.container div {
-  line-height: 1.7;
-}
-
-/* Links com melhor contraste */
-.container a:not(.btn):not(.home__btn-page) {
-  color: var(--bonfire-orange) !important;
-  border-bottom: 1px dotted var(--bonfire-border);
-  text-decoration: none !important;
-}
-
-.container a:not(.btn):not(.home__btn-page):hover {
-  color: var(--bonfire-text-gold) !important;
-  border-bottom-color: var(--bonfire-border-bright);
-  text-shadow: 0 0 8px var(--bonfire-glow);
-}
-
-/* Títulos de seção FAQ */
-.container h3 {
-  color: var(--bonfire-text-gold) !important;
-  font-family: 'Cinzel', serif !important;
-  border-bottom: 2px solid var(--bonfire-border);
-  padding-bottom: 8px;
-  margin-top: 30px;
-  text-shadow: 0 0 10px var(--bonfire-glow);
-}
-
-/* Strong/Bold com destaque */
-.container strong,
-.container b {
-  color: var(--bonfire-text-gold) !important;
-  font-weight: 700;
-}
-
-/* Code blocks */
-.container code {
-  background: rgba(207, 48, 32, 0.15) !important;
-  border: 1px solid var(--bonfire-border);
-  color: var(--bonfire-text-cream) !important;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
-/* Imagens com borda sutil */
-.container img {
-  border: 1px solid var(--bonfire-border);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-/* Ajusta logo/título */
-.page__title {
-  letter-spacing: 2px;
-  font-weight: 700 !important;
-}
-
-/* Remove animação excessiva em alguns casos */
-@media (prefers-reduced-motion: reduce) {
-  .home__btn-page:hover {
-    animation: none;
-  }
-}
-
-/* Ajuste fino para modo noturno */
+/* Força o modo noturno visualmente */
 .ve-night-mode body {
-  background: linear-gradient(135deg, #0f0e0d 0%, #000000 100%) !important;
-}
-
-.ve-night-mode .home__btn-page {
-  background: linear-gradient(135deg, rgba(41, 35, 31, 0.98) 0%, rgba(20, 18, 16, 0.98) 100%) !important;
+  background-color: var(--bonfire-bg-darker) !important;
 }

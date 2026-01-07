@@ -1,8 +1,9 @@
 {
 	"feat": [
 		{
-			"name": "Marca Aberrante",
-			"source": "BFT",
+			"name": "Aberrant Dragonmark",
+			"source": "EFA",
+			"page": 39,
 			"category": "D",
 			"prerequisite": [
 				{
@@ -58,46 +59,6 @@
 					"name": "Aberrant Surge",
 					"entries": [
 						"When you cast the level 1 spell from this feat, you can expend one of your {@variantrule Hit Point Dice|XPHB} and roll it. If you roll an even number, you gain a number of {@variantrule Temporary Hit Points|XPHB} equal to the number rolled. If you roll an odd number, one creature within 30 feet of you (not including you) takes Force damage equal to the number rolled. If no other creatures are in range, you take the damage."
-					]
-				}
-			]
-		},
-		{
-			"name": "Toque Arcano",
-			"source": "BFT",
-			"page": 0,
-			"prerequisite": [
-				{
-					"spellcasting": true
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": ["int", "wis", "cha"],
-						"amount": 1
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": ["int", "wis", "cha"]
-					},
-					"known": {
-						"_": [
-							{"choose": "level=0|class=Wizard", "count": 2}
-						]
-					}
-				}
-			],
-			"entries": [
-				"Você ganha os seguintes benefícios:",
-				{
-					"type": "list",
-					"items": [
-						"Você aprende dois cantrips de sua escolha da lista de magias do mago.",
-						"Seu atributo de conjuração para esses cantrips é Inteligência, Sabedoria ou Carisma (escolha ao ganhar este talento)."
 					]
 				}
 			]

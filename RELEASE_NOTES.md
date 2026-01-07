@@ -1,0 +1,25 @@
+v2.22.0, "Closer Encounters" Edition
+
+- Reworked and expanded the Bestiary page Encounter Builder:
+  - Added support for '24 encounter building rules
+  - Added support for MCDM's "Flee, Mortals!" encounter building rules
+  - Added support for K+FC encounter templates
+  - Added support for custom encounter templates
+  - Added support for homebrew encounter templates
+  - Reworked randomization, to produce more usable results _[hopefully]_
+  - Updated estimated TTK for '24 rules
+  - Improved UI, including a new "thermometer" visualizer for encounter difficulty
+- The Items page now supports exclusion of specific variants generated from filter-excluded base items (i.e., those from a "red"-filter'd source)
+- Converted Items page sublist "count" display to an editable field
+- Added "Reprinted" tagging for '14 PHB and DMG in the Tables page
+- Added SHIFT+click for +/-5 to tickers in number inputs
+- The full List page sublist UI is now always available if the list has previously been saved (even if that list is empty)
+- Fixed List page visual flicker when loading a new sublist
+- Fixed sublist count failing to update on sublist duplication
+- Fixed Loot Generator crash on gems/art object generation
+- Fixed Decks page crash when attempting to view a card
+- Fixed Other Options and Features failing to show feature type above stats in some cases
+- Fixed Items page rendering of tier/subtypes
+- (Brew) Added "Editing ..." indicator to Homebrew Builder, showing the prior name of the entity currently being edited
+- (Brew) Fixed Background Text Converter failing to convert starting equipment categories in '24 content
+- (Fixed typos/added tags)

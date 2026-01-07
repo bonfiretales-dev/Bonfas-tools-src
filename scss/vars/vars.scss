@@ -11,23 +11,23 @@ $spacer: 1rem;
 
 $rgb-off-black: #333;
 
-$rgb-active-blue--light: #ff8c42;
-$rgb-active-blue: #ff5700;
-$rgb-active-blue--dark: #b4000c;
-$rgb-active-red--light: #e03828;
-$rgb-active-red: #cf3020;
-$rgb-active-red--dark: #b4000c;
+$rgb-active-blue--light: #7398b7;
+$rgb-active-blue: #337ab7;
+$rgb-active-blue--dark: #2a6496;
+$rgb-active-red--light: #8a4b4b;
+$rgb-active-red: #8a1a1b;
+$rgb-active-red--dark: #711617;
 $rgb-inactive-grey: #c3c3c3;
 
-$rgb-name-red: #cf3020;
-$rgb-bg-orange: #2a2320;
+$rgb-name-red: #822000;
+$rgb-bg-orange: #fdf1dc;
 $rgb-bg-highlight: #ff0;
-$rgb-border-yellow--statblock: #ff5700;
+$rgb-border-yellow--statblock: #e69a28;
 
-$rgb-link-blue: #ff5700;
+$rgb-link-blue: $rgb-active-blue;
 $rgb-link-blue--muted: #7096b7;
 
-$rgb-border-grey: rgba(255, 120, 40, 0.25);
+$rgb-border-grey: #ccc;
 $rgb-border-grey--trans: #cccccca0;
 $rgb-border-grey--trans-muted: #ccc6;
 $rgb-border-grey--muted: #eee;
@@ -42,12 +42,12 @@ $rgb-stripe-grey--faint: #bbbbbb18;
 
 $rgb-cb-grey: #666;
 
-$rgb-bg: #1c1a18;
-$rgb-bg--alt: #141414;
+$rgb-bg: #fff;
+$rgb-bg--alt: #f5f5f5;
 $rgb-bg-homebrew: #ff00001a;
 
-$rgb-font: #eae1cf;
-$rgb-font--muted: #a09080;
+$rgb-font: #333;
+$rgb-font--muted: #777;
 
 $rgb-ctx-item-text-disabled: #777;
 
@@ -60,7 +60,7 @@ $rgb-btn-danger-bg-red: #d9534f;
 
 $rgb-btn-danger-border-red: #ac2925;
 
-$rgb-btn-primary-blue: #cf3020;
+$rgb-btn-primary-blue: $rgb-active-blue;
 $rgb-btn-primary-blue--desaturated: #b8b8b8;
 
 $rgb-class-variant: #8f903c;
