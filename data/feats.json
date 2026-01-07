@@ -149,6 +149,378 @@
 			]
 		},
 		{
+  "name": "Alerta",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Tente me pegar desprevenido. Será o último erro que você cometerá enquanto respira."
+      ]
+    },
+    "Sua mente está sempre vigilante contra o perigo e você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Proficiência em Iniciativa.: Quando você rolar Iniciativa, você pode adicionar seu Bônus de Proficiência à rolagem.",
+        "Troca de Iniciativa.: Imediatamente depois de você rolar Iniciativa, você pode trocar sua Iniciativa com a Iniciativa de um aliado disposto no mesmo combate. Você não pode fazer essa troca se você ou o aliado estiver com a condição {@condition incapacitated}.",
+        "Outras criaturas não ganham vantagem nas jogadas de ataque contra você por estarem escondidas de você."
+      ]
+    }
+  ]
+},{
+  "name": "Atacante Selvagem",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Um golpe preciso pode encerrar uma luta, mas um golpe brutal garante que nada reste para contar a história."
+      ]
+    },
+    "Você treinou para desferir golpes particularmente danosos, que funciona da seguinte forma:",
+    {
+      "type": "list",
+      "items": [
+        "Golpe Aprimorado.: Uma vez por turno, ao atingir um alvo com uma Arma ou Golpe Desarmado, você pode rolar os dados de dano do ataque duas vezes e usar qualquer um dos resultados contra o alvo.",
+        "Atacante Violento.: Quando você ataca uma criatura que esteja {@condition bloodied} (Bloodied) com um ataque com arma ou Golpe Desarmado, você sempre pode rolar os dados de dano do ataque duas vezes e usar quaisquer resultados."
+      ]
+    }
+  ]
+},{
+  "name": "Brigão de Taverna",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Cadeira, garrafa, punho fechado… em uma taverna, tudo víra arma, e você aprendeu a usar cada canto do ambiente a seu favor."
+      ]
+    },
+    "Você é especialista em brigas improvisadas, virando o ambiente e objetos comuns em vantagem, da seguinte forma:",
+    {
+      "type": "list",
+      "items": [
+        "Improviso Letal.: Você é proficiente com ataques improvisados. Sempre que usar um objeto comum como arma improvisada, ele conta como uma arma simples com a qual você é proficiente.",
+        "Pegada Agressiva.: Quando você acertar uma criatura com um ataque desarmado ou arma improvisada no seu turno, pode usar uma Ação Bônus para tentar agarrar (Grapple) ou empurrar (Shove) essa criatura.",
+        "Duro de Cair.: Uma vez por descanso curto ou longo, quando você for reduzido a 0 pontos de vida por dano contundente, cortante ou perfurante, você cai a 1 ponto de vida em vez disso."
+      ]
+    }
+  ]
+}
+,{
+  "name": "Caçador de Vampiros",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Enquanto estes seres rastejarem por aí, eu estarei lá para antagonizar a existência deles."
+      ]
+    },
+    "Você treinou para caçar e se proteger dessas criaturas, o que lhe confere os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Conhecimento Sobrenatural.: Você tem Vantagem em testes de Inteligência (Arcanismo) ou Sabedoria (Religião) relacionados a vampiros e mortos-vivos similares.",
+        "Marcas e Símbolos.: Você ganha proficiência com Kit de Herbalismo ou Ferramentas de Calígrafo (escolha uma) e pode usá-los para preparar símbolos, unguentos e marcas que contem como foco sagrado contra mortos-vivos.",
+        "Fuga Astuta.: Você tem Vantagem em testes para escapar de restrições não mágicas ou da condição Agarrado (Grappled).",
+        "Resiliência do Caçador.: Quando você sofrer dano necrótico, pode usar uma Reação para mitigar o dano. Role um número de d6 igual ao seu bônus de proficiência e some os resultados; reduza o dano necrótico sofrido por esse total. Depois de usar este benefício, você não pode usá-lo novamente até terminar um descanso curto ou longo."
+      ]
+    }
+  ]
+}
+,{
+  "name": "Escudeiro do Amanhecer",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Nas escolas do Amanhecer, a disciplina não é discurso, é rotina. A batalha é decidida no primeiro fôlego, e eu treinei para nunca desperdiçá‑lo."
+      ]
+    },
+    "Você foi treinado para dominar o momento decisivo do combate, combinando agilidade na montaria com a capacidade de desferir o primeiro golpe com precisão letal. Você recebe os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Entrada e Saída da Sela.: Assumir ou abandonar a sela custa apenas 1,5 metro (5 pés) de seu movimento, em vez da metade do seu deslocamento.",
+        "Golpe Preciso.: Uma vez por turno, ao realizar uma jogada de ataque com arma contra uma criatura, você pode declarar um golpe preciso. Você realiza a jogada de ataque com Vantagem. Se o ataque acertar, você adiciona 1d8 à rolagem de dano. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência, gastando um uso apenas se o ataque acertar, e recupera todos os usos ao terminar um descanso longo.",
+        "Disciplina de Cavalgada e Voz de Comando.: Você ganha proficiência com Veículos Terrestres e na perícia Persuasão."
+      ]
+    }
+  ]
+}
+,{
+  "name": "Ninja de Hanryo",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Em Hanryo, o vento ensina a esconder passos e a pedra ensina a esperar. Você reage como sombra treinada, punindo a abertura antes que ela vire grito."
+      ]
+    },
+    "Você aprendeu técnicas de contra-ataque e coordenação silenciosa típicas dos ninjas de Hanryo, explorando brechas com precisão e guiando seu time no primeiro batimento do combate. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Retaliação.: Imediatamente depois que uma criatura a 1,5 metro (5 pés) de você acertar você com um ataque corpo a corpo, você pode fazer um Ataque de Oportunidade contra essa criatura.",
+        "Explorar Brecha.: Quando você rolar dano para um Ataque de Oportunidade, você pode rolar os dados de dano duas vezes e usar qualquer uma das rolagens contra o alvo.",
+        "Primeiro o Time.: Se você tiver Inspiração Heroica quando rolar Iniciativa, você pode gastá‑la para dar a você e aos seus aliados Vantagem nessa rolagem de Iniciativa."
+      ]
+    }
+  ]
+}
+,
+{
+  "name": "Centelha de Fogo Espiritual",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "O fogo de Tsunari não precisa de lenha, ele se alimenta de mentiras. Respire fundo se arder, porque sua alma tem algo a esconder."
+      ]
+    },
+    "Você aprendeu a sintonizar sua vontade com as marés de mana da ilha, utilizando disciplina e respiração para manifestar chamas que purgam intenções e amortecem a magia hostil. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Absorção Espiritual.: Uma vez por turno, quando você sofrer dano proveniente de uma magia ou efeito mágico, você pode reduzir o dano total sofrido em 1d6. Você não pode usar este benefício se estiver com a condição Incapacitado.",
+        "Chama da Centelha.: Você aprende o truque Chama Sagrada. Escolha Inteligência, Sabedoria ou Carisma como seu atributo de conjuração ao selecionar este talento.",
+        "Ignição Rápida.: Você pode conjurar esse truque como uma Ação Bônus. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos quando termina um descanso longo."
+      ]
+    }
+  ]
+},
+		{
+  "name": "Iluminado pelo Primeiro Feixe",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Antes dos deuses moldarem a argila, antes dos elementos ganharem nomes, havia apenas o choque. Meus olhos não refletem o sol, eles lembram o momento exato em que o Nada se tornou Tudo."
+      ]
+    },
+    "Você carrega em sua alma uma centelha da Luz Primordial, aquela que existia na Era da Solidão, permitindo enxergar através das mentiras da Umbra e revelar verdades ocultas. Você recebe os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Olhos do Iluminado.: A luz original queima a escuridão ao seu redor.",
+        "Proteção Visual.: Você e aliados a até 3 metros (10 pés) de você têm Vantagem em Testes de Resistência feitos para evitar ou encerrar a condição Cego (Blinded).",
+        "Luz da Revelação.: Você aprende a magia Fogo das Fadas (Faerie Fire). Escolha Inteligência, Sabedoria ou Carisma como seu atributo para esta magia ao selecionar o talento. Você pode conjurar essa magia uma vez sem gastar um espaço de magia, recuperando o uso ao terminar um descanso longo, e também pode conjurá‑la usando seus espaços de magia normais.",
+        "Estabilidade Primordial.: Quando você conjura Fogo das Fadas usando o benefício de uso gratuito deste talento, a magia não requer Concentração, durando toda a sua duração ou até você dispensá‑la."
+      ]
+    }
+  ]
+},
+		{
+  "name": "Favorecido pelo Divino",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Em Cinria, a fé não é sempre uma catedral de pedra — às vezes é apenas um sussurro teimoso que lhe diz para virar à esquerda quando a morte espera à direita."
+      ]
+    },
+    "Alguma força maior notou sua existência. Você aprendeu a interpretar pequenos milagres e intuições divinas, entendendo que todo dom carrega o peso de uma postura perante o sagrado. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Truque Abençoado.: Você aprende 1 truque de sua escolha da lista de magias de Clérigo.",
+        "Presságio.: Você aprende a magia Augúrio (Augury).",
+        "Magia da Afinidade.: Você aprende 1 magia de 1º nível com base na afinidade do seu personagem, de acordo com a tabela de Afinidades Divinas (Sombri(a) — lista de Místico; Luminar — lista de Clérigo; Natural — lista de Druida).",
+        "Mecânica de Conjuração.: Você pode conjurar a magia de 1º nível escolhida e a magia Augúrio uma vez cada sem gastar um espaço de magia, recuperando esses usos ao terminar um descanso longo. Você também pode conjurar essas magias utilizando quaisquer espaços de magia que possua do nível apropriado.",
+        "Atributo.: Escolha Inteligência, Sabedoria ou Carisma como seu atributo de conjuração ao selecionar este talento.",
+        "Foco Sagrado.: Você pode usar um Símbolo Sagrado como foco de conjuração para qualquer magia que conjure utilizando o atributo escolhido para este talento."
+      ]
+    }
+  ]
+},{
+  "name": "Iniciado do Convento",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "O primeiro passo para servir Umbra não é uma prece, é um alvo. Você aprendeu que a realidade tem costuras, e que basta puxar o fio certo para ver alguém sangrar."
+      ]
+    },
+    "Você deu os primeiros passos nos ensinamentos ocultos dos conventos de Velmourn, aprendendo a marcar as almas de seus inimigos com a mácula da ilha. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Maldição.: Você aprende a magia Hex. Você sempre a tem preparada e ela não conta no número de magias que você pode preparar. Você pode conjurá‑la uma vez sem gastar um espaço de magia e recupera essa capacidade ao terminar um descanso longo. Você também pode conjurá‑la utilizando seus espaços de magia normais. Ao selecionar este talento, escolha Inteligência, Sabedoria ou Carisma como seu atributo de conjuração para essa magia.",
+        "Variação Psíquica.: Ao conjurar Hex usando este talento, você pode escolher causar dano psíquico em vez de dano necrótico.",
+        "Magia da Má Sorte.: Quando uma criatura que esteja atualmente sob efeito da sua magia Hex acertar você com uma jogada de ataque, ela sofre dano psíquico igual ao seu bônus de proficiência. Uma criatura sofre esse dano apenas uma vez por turno."
+      ]
+    }
+  ]
+}
+,
+{
+  "name": "Iniciado em Magia",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "O tecido da realidade é vasto e complexo, mas basta puxar um único fio para ver o mundo mudar de cor diante dos seus olhos."
+      ]
+    },
+    "Você desbloqueou um potencial mágico latente ou estudou o suficiente para dominar os fundamentos práticos de uma tradição arcana, divina ou natural. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Truques.: Você aprende dois truques de sua escolha da lista de magias de Clérigo, Druida ou Mago.",
+        "Atributo de Conjuração.: Ao escolher este talento, escolha Inteligência, Sabedoria ou Carisma para ser seu atributo de conjuração para todas as magias deste talento.",
+        "Magia de 1º Círculo.: Escolha uma magia de 1º nível da mesma lista que você selecionou para os truques deste talento. Você sempre tem essa magia preparada.",
+        "Uso Gratuito.: Você pode conjurar essa magia de 1º nível uma vez sem gastar um espaço de magia e recupera a capacidade de fazê‑lo quando termina um descanso longo. Você também pode conjurá‑la usando quaisquer espaços de magia que possua.",
+        "Adaptação Arcana.: Sempre que ganhar um novo nível de personagem, você pode substituir uma das magias que escolheu para este talento por outra magia diferente do mesmo nível, da mesma lista escolhida originalmente.",
+        "Repetível.: Você pode escolher este talento mais de uma vez, mas deve escolher uma lista de magias diferente (Clérigo, Druida ou Mago) a cada vez."
+      ]
+    }
+  ]
+},{
+  "name": "Iniciado no Juramento das Três Luas",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Em Lunaris, a lua não muda sua magia. Ela batiza seu método. O juramento feito sob sua luz não é uma escolha, é uma cicatriz na alma."
+      ]
+    },
+    "Você recebeu treinamento das escolas de Lunaris, jurando fidelidade a uma das três Vestes Lunares e incorporando suas fórmulas tradicionais ao seu repertório de forma irrevogável. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Veste Lunar.: Escolha 1 das 3 luas de Lunaris para influenciar sua magia: Lua Negra, Lua de Sangue ou Lua de Cristal. Essa escolha define quais magias você pode aprender com este talento.",
+        "Truque de Iniciação.: Você aprende 1 truque de sua escolha da lista de magias de Mago.",
+        "Magias da Veste.: Você aprende 2 magias de 1º círculo com base na Veste escolhida. Escolha 2 entre as 4 opções disponíveis na sua Veste.",
+        "Conjuração da Veste.: Você pode conjurar cada uma das duas magias de 1º círculo escolhidas uma vez sem gastar um espaço de magia. Você recupera todos os usos ao terminar um descanso longo. Você também pode conjurá‑las usando quaisquer espaços de magia que possua.",
+        "Atributo de Conjuração.: Escolha Inteligência, Sabedoria ou Carisma como seu atributo de conjuração ao selecionar este talento."
+      ]
+    }
+  ]
+}
+,{
+  "name": "Cão de Caça",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Eles podem apagar as tochas e caminhar nas sombras, mas não podem silenciar o batimento de seus próprios corações ou o cheiro do medo."
+      ]
+    },
+    "Seus sentidos foram aguçados muito além dos limites normais, tornando-o um rastreador implacável capaz de perceber o imperceptível e caçar presas feridas. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Sensor de Movimento.: Você ganha Visão às Cegas com alcance de 3 metros (10 pés). Se você já possuir esse sentido proveniente de outra fonte, o alcance dele aumenta em 3 metros (10 pés).",
+        "Rastro de Sangue.: Você sabe automaticamente a localização de qualquer criatura a até 18 metros (60 pés) de você que possua menos da metade de seus Pontos de Vida máximos e não seja um Construto nem um Morto‑Vivo.",
+        "Nenhum Refúgio.: Você tem Vantagem em testes de Sabedoria (Percepção) que dependam de audição ou olfato."
+      ]
+    }
+  ]
+}
+,
+{
+  "name": "Explorador de Masmorras",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "O silêncio de uma tumba é uma mentira — cada pedra solta é um gatilho e cada sombra um predador esperando para acontecer."
+      ]
+    },
+    "Você aprimorou seus sentidos para sobreviver aos ambientes traiçoeiros de ruínas subterrâneas, desenvolvendo uma paranoia tática que lhe permite antecipar desastres. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Olhos para o Oculto.: Você tem Vantagem em testes de Sabedoria (Percepção) e Inteligência (Investigação) para detectar portas secretas, passagens ocultas e armadilhas, bem como criaturas ocultas ou disfarçadas.",
+        "Instinto Antiperigo.: Você tem Vantagem em testes de resistência feitos para evitar ou resistir a armadilhas e perigos ambientais, naturais ou mágicos.",
+        "Pele Endurecida.: Você possui Resistência ao dano causado por armadilhas.",
+        "Aviso no Último Segundo.: Quando você ou uma criatura que possa ver a até 9 metros (30 pés) for forçada a fazer um teste de resistência contra uma armadilha ou perigo ambiental, você pode usar sua Reação para conceder Vantagem ao alvo nesse teste. Você pode usar este benefício um número de vezes igual ao seu bônus de proficiência, recuperando todos os usos ao terminar um descanso longo.",
+        "Marcha Atenta.: Você ganha proficiência na perícia Sobrevivência. Viajar em ritmo rápido não impõe a penalidade de -5 no seu valor passivo de Sabedoria (Percepção)."
+      ]
+    }
+  ]
+}
+,{
+  "name": "Marca Anômala",
+  "source": "BFT",
+  "page": 0,
+  "category": "O",
+  "prerequisite": [
+    {
+      "type": "level",
+      "level": 1
+    },
+    {
+      "type": "other",
+      "entry": "Não possuir outra Marca Arcana."
+    }
+  ],
+  "entries": [
+    {
+      "type": "quote",
+      "entries": [
+        "Algo na sua alma não acendeu na Trama, ele se prendeu nas fendas.",
+        "Quando a Umbra te olha de volta, seu corpo aprende a pagar o preço."
+      ]
+    },
+    "Uma anomalia espiritual ligada à influência da Umbra marca você com uma runa irregular. Ela concede magia instintiva, mas sempre com consequências imprevisíveis. Você ganha os seguintes benefícios:",
+    {
+      "type": "list",
+      "items": [
+        "Fortitude Anômala.: Quando você falhar em um teste de resistência de Constituição, pode usar uma Reação para rolar 1d4 e somar o resultado ao teste, potencialmente transformando a falha em sucesso. Depois de usar este benefício, você não pode usá‑lo novamente até terminar um descanso longo.",
+        "Magia Anômala.: Você aprende 1 truque (cantrip) à sua escolha da lista de magias de Feiticeiro. Além disso, escolha 1 magia de 1º nível dessa lista. Você sempre tem essa magia preparada. Você pode conjurá‑la uma vez sem gastar espaço de magia e recupera a capacidade de conjurá‑la dessa forma ao terminar um descanso curto ou longo. Você também pode conjurá‑la usando quaisquer espaços de magia que possua. Constituição é seu atributo de conjuração para essa magia.",
+        "Surto Anômalo.: Quando você conjurar a magia de 1º nível deste talento, pode gastar um dos seus Dados de Vida e rolá‑lo.\n- Número par: Você ganha Pontos de Vida Temporários iguais ao número rolado.\n- Número ímpar: Uma criatura a até 9 metros (30 pés) de você, não incluindo você, sofre dano de Força igual ao número rolado. Se não houver outras criaturas no alcance, você sofre o dano."
+      ]
+    }
+  ]
+}
+,		
+
+
+
+		
+
+		{
 			"name": "Aberrant Dragonmark",
 			"source": "ERLW",
 			"page": 52,
