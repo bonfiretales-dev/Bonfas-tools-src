@@ -63,6 +63,52 @@
 			]
 		},
 		{
+      "name": "Alerta",
+      "source": "BFT",
+      "page": 0,
+      "category": "O",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Tente me pegar desprevenido. Será o último erro que você cometerá enquanto respira."
+          ]
+        },
+        "Sua mente está sempre vigilante contra o perigo e você ganha os seguintes benefícios:",
+        {
+          "type": "list",
+          "items": [
+            "Proficiência em Iniciativa.: Quando você rolar Iniciativa, você pode adicionar seu Bônus de Proficiência à rolagem.",
+            "Troca de Iniciativa.: Imediatamente depois de você rolar Iniciativa, você pode trocar sua Iniciativa com a Iniciativa de um aliado disposto no mesmo combate. Você não pode fazer essa troca se você ou o aliado estiver com a condição {@condition incapacitated}.",
+            "Outras criaturas não ganham vantagem nas jogadas de ataque contra você por estarem escondidas de você."
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Atacante Selvagem",
+      "source": "BFT",
+      "page": 0,
+      "category": "O",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Um golpe preciso pode encerrar uma luta, mas um golpe brutal garante que nada reste para contar a história."
+          ]
+        },
+        "Você treinou para desferir golpes particularmente danosos, que funciona da seguinte forma:",
+        {
+          "type": "list",
+          "items": [
+            "Golpe Aprimorado.: Uma vez por turno, ao atingir um alvo com uma Arma ou Golpe Desarmado, você pode rolar os dados de dano do ataque duas vezes e usar qualquer um dos resultados contra o alvo.",
+            "Atacante Violento.: Quando você ataca uma criatura que esteja {@condition bloodied} (Bloodied) com um ataque com arma ou Golpe Desarmado, você sempre pode rolar os dados de dano do ataque duas vezes e usar quaisquer resultados."
+          ]
+        }
+      ]
+    },
+		{
 			"name": "Toque Arcano",
 			"source": "BFT",
 			"page": 0,
