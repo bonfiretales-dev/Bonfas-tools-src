@@ -1,1 +1,19 @@
-@layer vetools{.languages__sample{font-size:20px;white-space:pre-wrap}.languages__sel-sample{max-width:130px}}/*# sourceMappingURL=languages.css.map */
+/* ============================================
+ * Arquivo: languages.css
+ * Projeto: Bonfas Tools
+ * Descrição: Estilos formatados em cascata (CORRIGIDO)
+ * Nota: Preservando estrutura de camadas (@layer)
+ * ============================================ */
+
+@layer vetools {
+  .languages__sample {
+    font-size: 20px;
+    white-space: pre-wrap
+  }
+
+  .languages__sel-sample {
+    max-width: 130px
+  }
+}
+
+/*# sourceMappingURL=languages.css.map */

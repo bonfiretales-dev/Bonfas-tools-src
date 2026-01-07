@@ -1,1 +1,21 @@
-@layer vetools{.big-help-gif{display:block;max-width:100%;max-height:98vh;margin:0 auto 25px}hr{border-width:4px}}/*# sourceMappingURL=plutonium.css.map */
+/* ============================================
+ * Arquivo: plutonium.css
+ * Projeto: Bonfas Tools
+ * Descrição: Estilos formatados em cascata (CORRIGIDO)
+ * Nota: Preservando estrutura de camadas (@layer)
+ * ============================================ */
+
+@layer vetools {
+  .big-help-gif {
+    display: block;
+    max-width: 100%;
+    max-height: 98vh;
+    margin: 0 auto 25px
+  }
+
+  hr {
+    border-width: 4px
+  }
+}
+
+/*# sourceMappingURL=plutonium.css.map */

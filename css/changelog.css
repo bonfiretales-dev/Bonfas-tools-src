@@ -1,1 +1,15 @@
-@layer vetools{.ve-night-mode #pagecontent{background:#222;border-top:1px solid rgba(85,85,85,.6274509804)}}/*# sourceMappingURL=changelog.css.map */
+/* ============================================
+ * Arquivo: changelog.css
+ * Projeto: Bonfas Tools
+ * Descrição: Estilos formatados em cascata (CORRIGIDO)
+ * Nota: Preservando estrutura de camadas (@layer)
+ * ============================================ */
+
+@layer vetools {
+  .ve-night-mode #pagecontent {
+    background: #222;
+    border-top: 1px solid rgba(85, 85, 85, .6274509804)
+  }
+}
+
+/*# sourceMappingURL=changelog.css.map */

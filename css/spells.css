@@ -1,1 +1,19 @@
-@layer vetools{.concentration{padding-left:5px;font-weight:bold}.concentration--sublist{padding-left:1px}}/*# sourceMappingURL=spells.css.map */
+/* ============================================
+ * Arquivo: spells.css
+ * Projeto: Bonfas Tools
+ * Descrição: Estilos formatados em cascata (CORRIGIDO)
+ * Nota: Preservando estrutura de camadas (@layer)
+ * ============================================ */
+
+@layer vetools {
+  .concentration {
+    padding-left: 5px;
+    font-weight: bold
+  }
+
+  .concentration--sublist {
+    padding-left: 1px
+  }
+}
+
+/*# sourceMappingURL=spells.css.map */

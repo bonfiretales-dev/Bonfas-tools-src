@@ -1,1 +1,16 @@
-@layer vetools{.opt-feature-type{font-style:italic;display:inline-block;margin-left:7px}}/*# sourceMappingURL=optionalfeatures.css.map */
+/* ============================================
+ * Arquivo: optionalfeatures.css
+ * Projeto: Bonfas Tools
+ * Descrição: Estilos formatados em cascata (CORRIGIDO)
+ * Nota: Preservando estrutura de camadas (@layer)
+ * ============================================ */
+
+@layer vetools {
+  .opt-feature-type {
+    font-style: italic;
+    display: inline-block;
+    margin-left: 7px
+  }
+}
+
+/*# sourceMappingURL=optionalfeatures.css.map */
