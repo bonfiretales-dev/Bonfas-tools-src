@@ -1862,10 +1862,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -1906,10 +1908,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -1942,10 +1946,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -1977,10 +1983,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2012,10 +2020,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2046,10 +2056,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2081,10 +2093,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2124,10 +2138,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2167,10 +2183,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2201,10 +2219,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2239,13 +2259,13 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
-				},
-				{
-					"con": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2283,13 +2303,13 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
-				},
-				{
-					"con": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2329,13 +2349,13 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
-				},
-				{
-					"wis": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2416,13 +2436,13 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"con": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2499,10 +2519,12 @@
 			],
 			"ability": [
 				{
-					"dex": 1
-				},
-				{
-					"int": 1
+					"choose": {
+						"from": [
+							"dex",
+							"int"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2540,10 +2562,12 @@
 			],
 			"ability": [
 				{
-					"dex": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"dex",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2583,13 +2607,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2627,13 +2651,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2672,13 +2696,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2744,13 +2768,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2782,13 +2806,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2820,13 +2844,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"repeatable": true,
@@ -2866,13 +2890,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2904,13 +2928,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2949,13 +2973,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -2988,13 +3012,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3035,13 +3059,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3073,13 +3097,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3112,13 +3136,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3150,13 +3174,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3195,13 +3219,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3240,13 +3264,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3298,13 +3322,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3338,13 +3362,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3378,13 +3402,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3419,13 +3443,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3540,10 +3564,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3622,10 +3648,12 @@
 			],
 			"ability": [
 				{
-					"dex": 1
-				},
-				{
-					"con": 1
+					"choose": {
+						"from": [
+							"dex",
+							"con"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -3666,10 +3694,12 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -4558,10 +4588,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -4602,10 +4634,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -4645,10 +4679,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -4707,10 +4743,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -4752,10 +4790,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"dex": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -4933,13 +4973,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5057,10 +5097,12 @@
 			],
 			"ability": [
 				{
-					"str": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"str",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5100,10 +5142,12 @@
 			],
 			"ability": [
 				{
-					"dex": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"dex",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5136,13 +5180,13 @@
 			],
 			"ability": [
 				{
-					"con": 1
-				},
-				{
-					"int": 1
-				},
-				{
-					"wis": 1
+					"choose": {
+						"from": [
+							"con",
+							"int",
+							"wis"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5181,13 +5225,13 @@
 			],
 			"ability": [
 				{
-					"con": 1
-				},
-				{
-					"int": 1
-				},
-				{
-					"wis": 1
+					"choose": {
+						"from": [
+							"con",
+							"int",
+							"wis"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5219,13 +5263,13 @@
 			],
 			"ability": [
 				{
-					"con": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"con",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5257,13 +5301,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5304,13 +5348,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5357,10 +5401,12 @@
 			],
 			"ability": [
 				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5508,13 +5554,13 @@
 			],
 			"ability": [
 				{
-					"int": 1
-				},
-				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
@@ -5587,10 +5633,12 @@
 			],
 			"ability": [
 				{
-					"wis": 1
-				},
-				{
-					"cha": 1
+					"choose": {
+						"from": [
+							"wis",
+							"cha"
+						]
+					}
 				}
 			],
 			"category": "G"
