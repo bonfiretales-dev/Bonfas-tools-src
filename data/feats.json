@@ -1681,7 +1681,21 @@
 					"level": 4
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Apodrecer",
@@ -1708,7 +1722,21 @@
 					"level": 4
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Matador de Magos",
@@ -1742,7 +1770,21 @@
 					"level": 4
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Repreensão",
@@ -1769,7 +1811,21 @@
 					"level": 4
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Investida",
@@ -2310,7 +2366,19 @@
 					"level": 4
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Estigma Dracônico",
@@ -3827,7 +3895,21 @@
 					"other": "Nível 4+, Marca Arcana da Revelação"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Busca",
@@ -3855,7 +3937,21 @@
 					"other": "Nível 4+, Marca Arcana da Busca"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior do Pastoreio",
@@ -3884,7 +3980,21 @@
 					"other": "Nível 4+, Marca Arcana do Pastoreio"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Restauração",
@@ -3913,7 +4023,21 @@
 					"other": "Nível 4+, Marca Arcana da Restauração"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior do Refúgio",
@@ -3948,7 +4072,21 @@
 					"other": "Nível 4+, Marca Arcana do Refúgio"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Criação",
@@ -3976,7 +4114,21 @@
 					"other": "Nível 4+, Marca Arcana da Criação"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Travessia",
@@ -4004,7 +4156,21 @@
 					"other": "Nível 4+, Marca Arcana da Travessia"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Escrita",
@@ -4038,7 +4204,21 @@
 					"other": "Nível 4+, Marca Arcana da Escrita"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Vigília",
@@ -4066,7 +4246,21 @@
 					"other": "Nível 4+, Marca Arcana da Vigília"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior do Véu",
@@ -4094,7 +4288,21 @@
 					"other": "Nível 4+, Marca Arcana do Véu"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Tormenta",
@@ -4122,7 +4330,21 @@
 					"other": "Nível 4+, Marca Arcana da Tormenta"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Arcana Superior da Proteção",
@@ -4150,7 +4372,21 @@
 					"other": "Nível 4+, Marca Arcana da Proteção"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Marca Potente",
@@ -4186,7 +4422,21 @@
 					"other": "Nível 4+, qualquer Marca Superior ou Marca Anômala Maior"
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Mestre de Armas Grandes",
@@ -4755,7 +5005,21 @@
 					"level": 4
 				}
 			],
-			"category": "G"
+			"category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Determinação da Cavalaria",
