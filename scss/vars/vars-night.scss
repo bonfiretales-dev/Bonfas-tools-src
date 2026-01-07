@@ -2,27 +2,27 @@
 
 @use "../vars/vars";
 
-$rgb-name-red--night: #d29a38;
+$rgb-name-red--night: #ffda00;
 $rgb-name-alt--night: #c2c2c2;
 
-$rgb-link-blue--night: #7db6e8;
+$rgb-link-blue--night: #ff5700;
 $rgb-link-blue--muted-night: #6e8eab;
 
-$rgb-border-grey--night: #555;
+$rgb-border-grey--night: rgba(255, 120, 40, 0.25);
 $rgb-border-grey--trans-night: #555555a0;
 $rgb-border-grey--list-row-night: #444;
 $rgb-border-grey--statblock-night: #565656;
 
 $rgb-stripe-grey--night: #aaa2;
 
-$rgb-bg--body-night: #1c1c1c;
-$rgb-bg--night: #222;
-$rgb-bg--alt-night: #383838;
+$rgb-bg--body-night: #141414;
+$rgb-bg--night: #1c1a18;
+$rgb-bg--alt-night: #2a2320;
 $rgb-bg-homebrew--night: rgb(255 0 0 / 15%);
 
 $rgb-bg-highlight--night: #cc0;
 
-$rgb-font--night: #bbb;
+$rgb-font--night: #eae1cf;
 $rgb-font--muted-night: #777;
 
 $rgb-form-control-bg--night: #222;
