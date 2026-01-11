@@ -1,0 +1,375 @@
+/* ============================================================
+   BONFIRE TALES — FILTERS & LISTS STYLES
+   Estilos para filtros, listas, cards e componentes de seleção
+   ============================================================ */
+
+@use "../vars/vars";
+
+@layer vetools {
+	/* ============================================================
+	   FILTROS E CONTROLES
+	   ============================================================ */
+	
+	.filter,
+	.filtertools,
+	#filtertools {
+		background: vars.$bf-surface;
+		border: 1px solid vars.$bf-border;
+		border-radius: vars.$bf-radius-md;
+		padding: 12px;
+		box-shadow: vars.$bf-shadow;
+		
+		.filter-item,
+		.fltr__btn {
+			background: vars.$bf-surface-3;
+			color: vars.$bf-text;
+			border: 1px solid vars.$bf-border;
+			border-radius: 8px;
+			padding: 6px 12px;
+			margin: 4px;
+			cursor: pointer;
+			transition: all 0.2s ease;
+			
+			&:hover {
+				background: rgba(255, 87, 0, 0.10);
+				border-color: vars.$bf-border-strong;
+				box-shadow: 0 0 8px rgba(255, 120, 40, 0.12);
+			}
+			
+			&.active,
+			&--active {
+				background: linear-gradient(135deg,
+					rgba(255, 218, 0, 0.85),
+					rgba(255, 87, 0, 0.90) 45%,
+					rgba(180, 0, 12, 0.85));
+				color: #1a0f0a;
+				border-color: vars.$bf-border-strong;
+				font-weight: 600;
+			}
+			
+			&:disabled {
+				opacity: 0.55;
+				cursor: not-allowed;
+			}
+		}
+		
+		.filter-search,
+		.search-field {
+			background: rgba(0, 0, 0, 0.35);
+			border: 1px solid vars.$bf-border;
+			color: vars.$bf-text;
+			border-radius: 10px;
+			padding: 8px 12px;
+			width: 100%;
+			
+			&::placeholder {
+				color: vars.$bf-muted;
+			}
+			
+			&:focus {
+				border-color: vars.$bf-border-strong;
+				box-shadow: vars.$bf-focus;
+			}
+		}
+	}
+	
+	/* ============================================================
+	   LISTAS E ITENS
+	   ============================================================ */
+	
+	.list,
+	.list-group,
+	.listcontainer {
+		background: vars.$bf-surface;
+		border: 1px solid vars.$bf-border;
+		border-radius: vars.$bf-radius-md;
+		overflow: hidden;
+		
+		.list-item,
+		.list-group-item,
+		.lst__row {
+			background: transparent;
+			color: vars.$bf-text;
+			border-bottom: 1px solid rgba(255, 87, 0, 0.10);
+			padding: 10px 12px;
+			transition: all 0.15s ease;
+			cursor: pointer;
+			
+			&:nth-child(odd) {
+				background: rgba(255, 87, 0, 0.03);
+			}
+			
+			&:hover {
+				background: rgba(255, 87, 0, 0.12);
+				border-left: 3px solid vars.$bf-orange;
+				padding-left: 9px;
+			}
+			
+			&.active,
+			&--active {
+				background: rgba(255, 87, 0, 0.15);
+				border-left: 3px solid vars.$bf-ember;
+				padding-left: 9px;
+				color: vars.$bf-amber;
+				font-weight: 600;
+			}
+			
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	
+	/* ============================================================
+	   CARDS DE CONTEÚDO
+	   ============================================================ */
+	
+	.stats-card,
+	.content-card,
+	.info-card {
+		background: vars.$bf-surface;
+		border: 1px solid vars.$bf-border;
+		border-radius: vars.$bf-radius-md;
+		padding: 16px;
+		box-shadow: vars.$bf-shadow, vars.$bf-inset;
+		margin-bottom: 16px;
+		transition: all 0.2s ease;
+		
+		&:hover {
+			border-color: vars.$bf-border-strong;
+			box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65), vars.$bf-inset;
+			transform: translateY(-2px);
+		}
+		
+		.card-header,
+		.stats-name {
+			color: vars.$bf-ember;
+			font-family: vars.$bf-font-title;
+			font-weight: 700;
+			font-size: 1.2em;
+			border-bottom: 2px solid vars.$bf-border;
+			padding-bottom: 8px;
+			margin-bottom: 12px;
+		}
+		
+		.card-body,
+		.stats-body {
+			color: vars.$bf-text;
+			line-height: 1.6;
+		}
+		
+		.card-footer {
+			border-top: 1px solid vars.$bf-border;
+			padding-top: 8px;
+			margin-top: 12px;
+			color: vars.$bf-muted;
+			font-size: 0.9em;
+		}
+	}
+	
+	/* ============================================================
+	   BADGES E TAGS
+	   ============================================================ */
+	
+	.badge,
+	.tag,
+	.label {
+		background: vars.$bf-surface-3;
+		color: vars.$bf-text;
+		border: 1px solid vars.$bf-border;
+		border-radius: 6px;
+		padding: 2px 8px;
+		font-size: 0.85em;
+		font-weight: 600;
+		display: inline-block;
+		margin: 2px;
+		
+		&.badge-primary,
+		&.tag-primary {
+			background: linear-gradient(135deg,
+				rgba(255, 218, 0, 0.85),
+				rgba(255, 87, 0, 0.90) 45%,
+				rgba(180, 0, 12, 0.85));
+			color: #1a0f0a;
+			border-color: vars.$bf-border-strong;
+		}
+		
+		&.badge-success,
+		&.tag-success {
+			background: rgba(239, 174, 53, 0.25);
+			color: vars.$bf-amber;
+			border-color: vars.$bf-amber;
+		}
+		
+		&.badge-warning,
+		&.tag-warning {
+			background: rgba(255, 87, 0, 0.25);
+			color: vars.$bf-orange;
+			border-color: vars.$bf-orange;
+		}
+		
+		&.badge-danger,
+		&.tag-danger {
+			background: rgba(207, 48, 32, 0.25);
+			color: vars.$bf-ember;
+			border-color: vars.$bf-ember;
+		}
+	}
+	
+	/* ============================================================
+	   CHECKBOXES E RADIOS CUSTOMIZADOS
+	   ============================================================ */
+	
+	.checkbox-custom,
+	.radio-custom {
+		input[type="checkbox"],
+		input[type="radio"] {
+			@include vars.mix-cb-custom;
+		}
+	}
+	
+	/* ============================================================
+	   TOOLTIPS
+	   ============================================================ */
+	
+	.tooltip,
+	.ve-tooltip {
+		background: vars.$bf-surface;
+		border: 1px solid vars.$bf-border-strong;
+		border-radius: 8px;
+		padding: 6px 10px;
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.65);
+		color: vars.$bf-text;
+		font-size: 0.9em;
+		z-index: 9999;
+		
+		&::before {
+			border-color: vars.$bf-border-strong transparent transparent transparent;
+		}
+	}
+	
+	/* ============================================================
+	   MODALS E POPUPS
+	   ============================================================ */
+	
+	.modal,
+	.popup,
+	.ve-modal {
+		.modal-content,
+		.popup-content {
+			background: vars.$bf-surface;
+			border: 2px solid vars.$bf-border-strong;
+			border-radius: vars.$bf-radius-lg;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+			color: vars.$bf-text;
+			
+			.modal-header,
+			.popup-header {
+				background: vars.$bf-surface-2;
+				border-bottom: 2px solid vars.$bf-border;
+				border-radius: vars.$bf-radius-lg vars.$bf-radius-lg 0 0;
+				padding: 16px;
+				
+				.modal-title,
+				.popup-title {
+					color: vars.$bf-ember;
+					font-family: vars.$bf-font-title;
+					font-weight: 700;
+					font-size: 1.3em;
+				}
+				
+				.close,
+				.btn-close {
+					color: vars.$bf-muted;
+					opacity: 1;
+					transition: all 0.2s ease;
+					
+					&:hover {
+						color: vars.$bf-ember;
+						transform: scale(1.1);
+					}
+				}
+			}
+			
+			.modal-body,
+			.popup-body {
+				padding: 20px;
+			}
+			
+			.modal-footer,
+			.popup-footer {
+				background: vars.$bf-surface-2;
+				border-top: 1px solid vars.$bf-border;
+				border-radius: 0 0 vars.$bf-radius-lg vars.$bf-radius-lg;
+				padding: 12px 16px;
+			}
+		}
+		
+		.modal-backdrop,
+		.popup-backdrop {
+			background: rgba(0, 0, 0, 0.85);
+		}
+	}
+	
+	/* ============================================================
+	   PROGRESS BARS
+	   ============================================================ */
+	
+	.progress {
+		background: vars.$bf-surface-3;
+		border: 1px solid vars.$bf-border;
+		border-radius: 10px;
+		height: 20px;
+		overflow: hidden;
+		
+		.progress-bar {
+			background: linear-gradient(90deg,
+				rgba(255, 218, 0, 0.85),
+				rgba(255, 87, 0, 0.90) 45%,
+				rgba(180, 0, 12, 0.85));
+			height: 100%;
+			transition: width 0.3s ease;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #1a0f0a;
+			font-weight: 600;
+			font-size: 0.85em;
+		}
+	}
+	
+	/* ============================================================
+	   ALERTS E NOTIFICAÇÕES
+	   ============================================================ */
+	
+	.alert {
+		border-radius: vars.$bf-radius-md;
+		padding: 12px 16px;
+		margin-bottom: 16px;
+		border: 1px solid;
+		
+		&.alert-info {
+			background: rgba(234, 225, 207, 0.10);
+			border-color: vars.$bf-border;
+			color: vars.$bf-text;
+		}
+		
+		&.alert-success {
+			background: rgba(239, 174, 53, 0.15);
+			border-color: vars.$bf-amber;
+			color: vars.$bf-amber;
+		}
+		
+		&.alert-warning {
+			background: rgba(255, 87, 0, 0.15);
+			border-color: vars.$bf-orange;
+			color: vars.$bf-orange;
+		}
+		
+		&.alert-danger {
+			background: rgba(207, 48, 32, 0.15);
+			border-color: vars.$bf-ember;
+			color: vars.$bf-ember;
+		}
+	}
+}

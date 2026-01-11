@@ -1,0 +1,253 @@
+/* ============================================================
+   BONFIRE TALES — NAVIGATION STYLES
+   Estilos específicos para navbar, menu e navegação
+   ============================================================ */
+
+@use "../vars/vars";
+
+@layer vetools {
+	/* ============================================================
+	   NAVBAR PRINCIPAL
+	   ============================================================ */
+	
+	.navbar,
+	.nav,
+	nav {
+		background: vars.$bf-surface;
+		border-bottom: 2px solid vars.$bf-border-strong;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+		
+		a {
+			color: vars.$bf-text;
+			border-bottom: none;
+			transition: all 0.2s ease;
+			
+			&:hover,
+			&:focus {
+				color: vars.$bf-ember;
+				background: rgba(255, 87, 0, 0.08);
+				text-shadow: 0 0 8px rgba(255, 120, 40, 0.25);
+			}
+			
+			&.active {
+				color: vars.$bf-amber;
+				background: rgba(255, 87, 0, 0.12);
+				border-bottom: 2px solid vars.$bf-ember;
+			}
+		}
+	}
+	
+	/* ============================================================
+	   DROPDOWN MENUS
+	   ============================================================ */
+	
+	.dropdown-menu,
+	.ve-dropdown-menu {
+		background: vars.$bf-surface;
+		border: 1px solid vars.$bf-border-strong;
+		border-radius: vars.$bf-radius-md;
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65);
+		padding: 4px 0;
+		
+		li {
+			a {
+				color: vars.$bf-text;
+				padding: 8px 16px;
+				transition: all 0.15s ease;
+				border-bottom: none;
+				
+				&:hover,
+				&:focus {
+					background: rgba(255, 87, 0, 0.12);
+					color: vars.$bf-ember;
+				}
+			}
+			
+			&.active a {
+				background: rgba(255, 87, 0, 0.15);
+				color: vars.$bf-amber;
+			}
+		}
+		
+		.divider {
+			background: vars.$bf-border;
+			height: 1px;
+			margin: 4px 0;
+		}
+	}
+	
+	/* ============================================================
+	   TABS
+	   ============================================================ */
+	
+	.nav-tabs,
+	.tabs {
+		border-bottom: 2px solid vars.$bf-border;
+		
+		> li {
+			> a {
+				color: vars.$bf-text-2;
+				background: vars.$bf-surface-3;
+				border: 1px solid vars.$bf-border;
+				border-radius: vars.$bf-radius-sm vars.$bf-radius-sm 0 0;
+				margin-right: 4px;
+				padding: 8px 16px;
+				transition: all 0.2s ease;
+				
+				&:hover,
+				&:focus {
+					background: rgba(255, 87, 0, 0.08);
+					border-color: vars.$bf-border-strong;
+					color: vars.$bf-text;
+				}
+			}
+			
+			&.active > a {
+				background: vars.$bf-surface;
+				color: vars.$bf-ember;
+				border-color: vars.$bf-border-strong;
+				border-bottom-color: transparent;
+				font-weight: 600;
+			}
+		}
+	}
+	
+	/* ============================================================
+	   SIDEBAR NAVIGATION
+	   ============================================================ */
+	
+	.sidemenu,
+	.sidebar-nav,
+	.list-nav {
+		background: vars.$bf-surface;
+		border-right: 1px solid vars.$bf-border;
+		
+		a {
+			color: vars.$bf-text;
+			padding: 10px 16px;
+			display: block;
+			border-bottom: none;
+			border-left: 3px solid transparent;
+			transition: all 0.2s ease;
+			
+			&:hover,
+			&:focus {
+				background: rgba(255, 87, 0, 0.08);
+				border-left-color: vars.$bf-orange;
+				color: vars.$bf-ember;
+			}
+			
+			&.active {
+				background: rgba(255, 87, 0, 0.12);
+				border-left-color: vars.$bf-ember;
+				color: vars.$bf-amber;
+				font-weight: 600;
+			}
+		}
+	}
+	
+	/* ============================================================
+	   BREADCRUMBS
+	   ============================================================ */
+	
+	.breadcrumb {
+		background: vars.$bf-surface-3;
+		border-radius: vars.$bf-radius-sm;
+		padding: 8px 12px;
+		
+		> li {
+			color: vars.$bf-text-2;
+			
+			+ li::before {
+				content: "›";
+				color: vars.$bf-muted;
+				padding: 0 8px;
+			}
+			
+			a {
+				color: vars.$bf-ember;
+				border-bottom: none;
+				
+				&:hover {
+					color: vars.$bf-amber;
+				}
+			}
+			
+			&.active {
+				color: vars.$bf-text;
+			}
+		}
+	}
+	
+	/* ============================================================
+	   PAGINATION
+	   ============================================================ */
+	
+	.pagination {
+		> li {
+			> a,
+			> span {
+				background: vars.$bf-surface-3;
+				color: vars.$bf-text;
+				border: 1px solid vars.$bf-border;
+				margin: 0 2px;
+				border-radius: 8px;
+				padding: 6px 12px;
+				transition: all 0.2s ease;
+				
+				&:hover,
+				&:focus {
+					background: rgba(255, 87, 0, 0.12);
+					border-color: vars.$bf-border-strong;
+					color: vars.$bf-ember;
+				}
+			}
+			
+			&.active {
+				> a,
+				> span {
+					background: linear-gradient(135deg,
+						rgba(255, 218, 0, 0.85),
+						rgba(255, 87, 0, 0.90) 45%,
+						rgba(180, 0, 12, 0.85));
+					color: #1a0f0a;
+					border-color: vars.$bf-border-strong;
+					font-weight: 600;
+				}
+			}
+			
+			&.disabled {
+				> a,
+				> span {
+					opacity: 0.55;
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+	
+	/* ============================================================
+	   SEARCH BAR NA NAVBAR
+	   ============================================================ */
+	
+	.navbar-search,
+	.nav-search {
+		input[type="search"],
+		input[type="text"] {
+			background: rgba(0, 0, 0, 0.35);
+			border: 1px solid vars.$bf-border;
+			color: vars.$bf-text;
+			border-radius: 20px;
+			padding: 6px 16px;
+			
+			&::placeholder {
+				color: vars.$bf-muted;
+			}
+			
+			&:focus {
+				border-color: vars.$bf-border-strong;
+				box-shadow: 0 0 12px rgba(255, 120, 40, 0.18);
+			}
+		}
+	}
+}

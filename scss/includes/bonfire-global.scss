@@ -1,0 +1,339 @@
+/* ============================================================
+   BONFIRE TALES — GLOBAL STYLES
+   Estilos globais e estados interativos completos
+   ============================================================ */
+
+@use "../vars/vars";
+
+@layer vetools {
+	/* ============================================================
+	   BODY E HTML — Background Bonfire
+	   ============================================================ */
+	
+	html {
+		background: vars.$bf-bg;
+	}
+	
+	body {
+		background: 
+			radial-gradient(900px 520px at 50% 0%, 
+				rgba(255, 120, 40, 0.10), 
+				transparent 60%),
+			linear-gradient(180deg, vars.$bf-bg, vars.$bf-bg-gradient-2);
+		color: vars.$bf-text;
+		font-family: vars.$bf-font-body;
+		line-height: 1.6;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	
+	/* ============================================================
+	   LINKS — Ember underline com glow
+	   ============================================================ */
+	
+	a {
+		color: vars.$bf-ember;
+		text-decoration: none;
+		border-bottom: 1px dotted rgba(191, 0, 0, 0.90);
+		position: relative;
+		transition: color 0.15s ease, border-color 0.15s ease, text-shadow 0.2s ease;
+		
+		&:hover,
+		&:focus {
+			color: #df6040;
+			border-bottom-color: rgba(223, 96, 64, 0.95);
+			text-shadow: 0 0 6px rgba(255, 120, 40, 0.25);
+		}
+		
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -2px;
+			width: 0;
+			height: 2px;
+			background: linear-gradient(90deg,
+				rgba(255, 180, 80, 0.50),
+				rgba(223, 96, 64, 0) 70%);
+			transition: width 0.25s ease;
+		}
+		
+		&:hover::after,
+		&:focus::after {
+			width: 100%;
+		}
+	}
+	
+	/* ============================================================
+	   FOCUS VISIBLE — Acessibilidade
+	   ============================================================ */
+	
+	:focus-visible {
+		outline: none;
+		box-shadow: vars.$bf-focus;
+		border-radius: 6px;
+	}
+	
+	/* ============================================================
+	   HEADINGS — Bonfire style
+	   ============================================================ */
+	
+	h1, h2, h3, h4, h5, h6 {
+		color: vars.$bf-text;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.70);
+		margin: 0.6em 0 0.4em;
+		letter-spacing: 0.3px;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	h1, h2 {
+		font-family: vars.$bf-font-title;
+		font-weight: 800;
+		border-bottom: 3px solid transparent;
+		border-image-slice: 1;
+		border-image-source: linear-gradient(90deg,
+			rgba(255, 218, 0, 0.85),
+			rgba(255, 87, 0, 0.90) 45%,
+			rgba(180, 0, 12, 0.85) 85%,
+			rgba(0, 0, 0, 0) 100%);
+		padding-bottom: 6px;
+	}
+	
+	h3 {
+		font-family: vars.$bf-font-title;
+		font-weight: 700;
+		color: vars.$bf-ember;
+		background: rgba(26, 26, 26, 0.85);
+		border-bottom: 1px solid rgba(255, 87, 0, 0.45);
+		border-radius: 8px;
+		padding: 8px 10px;
+	}
+	
+	h4 {
+		font-family: vars.$bf-font-title;
+		font-weight: 700;
+		color: vars.$bf-amber;
+		background: rgba(26, 26, 26, 0.72);
+		border-bottom: 2px solid rgba(239, 174, 53, 0.65);
+		border-radius: 8px;
+		padding: 8px 10px;
+	}
+	
+	small {
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 0.06em;
+		color: vars.$bf-muted;
+	}
+	
+	em, i {
+		font-family: vars.$bf-font-title;
+		color: #ffe6c2;
+		letter-spacing: 0.03em;
+		text-shadow: 0 0 10px rgba(255, 140, 0, 0.12);
+		font-weight: 400;
+	}
+	
+	b i, strong i, i b, i strong {
+		color: #ffb25a;
+		text-shadow: none;
+	}
+	
+	/* ============================================================
+	   BOTÕES — Estados completos
+	   ============================================================ */
+	
+	button,
+	.btn,
+	input[type="button"],
+	input[type="submit"] {
+		background: vars.$bf-surface-3;
+		color: vars.$bf-text;
+		border: 1px solid vars.$bf-border;
+		border-radius: 12px;
+		padding: 8px 14px;
+		cursor: pointer;
+		font-family: vars.$bf-font-body;
+		transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease, 
+					background 0.2s ease, border-color 0.2s ease;
+		
+		&:hover:not(:disabled) {
+			background: rgba(255, 87, 0, 0.10);
+			border-color: vars.$bf-border-strong;
+			box-shadow: 0 0 12px rgba(255, 120, 40, 0.14);
+			filter: brightness(1.05) saturate(1.05);
+		}
+		
+		&:active:not(:disabled) {
+			transform: scale(0.98);
+			filter: brightness(0.98);
+		}
+		
+		&:focus-visible {
+			box-shadow: vars.$bf-focus;
+		}
+		
+		&:disabled {
+			opacity: 0.55;
+			cursor: not-allowed;
+			transform: none;
+			box-shadow: none;
+		}
+	}
+	
+	.btn-primary,
+	.btn--primary {
+		background: linear-gradient(90deg,
+			rgba(255, 218, 0, 0.85),
+			rgba(255, 87, 0, 0.90) 45%,
+			rgba(180, 0, 12, 0.85) 85%);
+		color: #1a0f0a;
+		border-color: rgba(255, 87, 0, 0.35);
+		text-shadow: none;
+		font-weight: 600;
+		
+		&:hover:not(:disabled) {
+			filter: brightness(1.04) saturate(1.06);
+			box-shadow: 0 0 18px rgba(255, 120, 40, 0.18);
+		}
+	}
+	
+	/* ============================================================
+	   INPUTS E SELECTS — Estados completos
+	   ============================================================ */
+	
+	input,
+	select,
+	textarea {
+		background: rgba(0, 0, 0, 0.28);
+		color: vars.$bf-text;
+		border: 1px solid vars.$bf-border;
+		border-radius: 12px;
+		padding: 8px 10px;
+		font-family: vars.$bf-font-body;
+		transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+		
+		&::placeholder {
+			color: rgba(234, 225, 207, 0.45);
+		}
+		
+		&:hover:not(:disabled):not(:focus) {
+			border-color: vars.$bf-border-strong;
+		}
+		
+		&:focus {
+			border-color: vars.$bf-border-strong;
+			box-shadow: vars.$bf-focus;
+			outline: none;
+			background: rgba(0, 0, 0, 0.35);
+		}
+		
+		&:disabled {
+			opacity: 0.55;
+			cursor: not-allowed;
+		}
+	}
+	
+	/* ============================================================
+	   TABELAS — Zebra Bonfire
+	   ============================================================ */
+	
+	table,
+	.table {
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 0;
+		background: vars.$bf-surface-2;
+		border: 1px solid vars.$bf-border;
+		border-radius: vars.$bf-radius-md;
+		overflow: hidden;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+		
+		thead th,
+		th {
+			background-color: vars.$bf-table-head;
+			color: vars.$bf-text;
+			padding: 10px;
+			border-bottom: 1px solid vars.$bf-border-strong;
+			font-weight: 700;
+		}
+		
+		tbody tr:nth-child(odd) {
+			background: vars.$bf-row-odd;
+		}
+		
+		tbody tr:nth-child(even) {
+			background: vars.$bf-row-even;
+		}
+		
+		tbody tr:hover {
+			background: rgba(255, 87, 0, 0.10);
+			cursor: pointer;
+		}
+		
+		td {
+			color: vars.$bf-text;
+			padding: 10px;
+			border-bottom: 1px solid rgba(255, 87, 0, 0.10);
+		}
+		
+		td:first-child,
+		th:first-child {
+			white-space: nowrap;
+		}
+	}
+	
+	/* ============================================================
+	   CARDS E PAINÉIS
+	   ============================================================ */
+	
+	.card,
+	.panel,
+	.container-card,
+	.content-card {
+		background: vars.$bf-surface;
+		border: 1px solid vars.$bf-border;
+		border-radius: vars.$bf-radius-md;
+		box-shadow: vars.$bf-shadow, vars.$bf-inset;
+		color: vars.$bf-text;
+		transition: box-shadow 0.2s ease, border-color 0.2s ease;
+		
+		&:hover {
+			border-color: vars.$bf-border-strong;
+			box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65), vars.$bf-inset;
+		}
+	}
+	
+	/* ============================================================
+	   SCROLLBAR — Bonfire sutil
+	   ============================================================ */
+	
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: rgba(207, 48, 32, 0.60) rgba(0, 0, 0, 0.35);
+	}
+	
+	*::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+	
+	*::-webkit-scrollbar-track {
+		background: rgba(0, 0, 0, 0.35);
+		border-radius: 999px;
+	}
+	
+	*::-webkit-scrollbar-thumb {
+		background: linear-gradient(180deg, 
+			rgba(255, 87, 0, 0.55), 
+			rgba(180, 0, 12, 0.55));
+		border: 2px solid rgba(0, 0, 0, 0.35);
+		border-radius: 999px;
+		
+		&:hover {
+			background: linear-gradient(180deg, 
+				rgba(255, 87, 0, 0.70), 
+				rgba(180, 0, 12, 0.70));
+		}
+	}
+}
